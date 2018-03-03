@@ -33,8 +33,8 @@ if ($_POST) {
     <head>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="keywords" content="">
         <meta name="description" content="">
 
@@ -684,7 +684,7 @@ if ($_POST) {
 			================================================== -->
                     <div class="col-md-offset-2 col-md-8 col-sm-12">
                         <div class="section-title">
-                            <h1>Estamos En Contaco</h1>
+                            <h1>Estamos En Contacto</h1>
                             <p>Es para nosotros importante saber sus opiniones escribanos sus inquietudes.</p>
                         </div>
                     </div>
