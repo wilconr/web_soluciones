@@ -23,8 +23,6 @@ if ($_POST) {
       $mensajeExito = '<div class="alert alert-success" role="alert">Mensaje enviado con exito :) </div>';
       header('location:index.php');
     }
-
-
 }
 
 ?>
