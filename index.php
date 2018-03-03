@@ -21,6 +21,7 @@ if ($_POST) {
   else{
       sendMail($_POST['email'],'qwerty.870403@gmail.com', $contenido, $_POST['asunto']);
       $mensajeExito = '<div class="alert alert-success" role="alert">Mensaje enviado con exito :) </div>';
+      header('location:index.php');
     }
 
 
@@ -72,7 +73,7 @@ if ($_POST) {
    ================================================== -->
         <link rel="stylesheet" href="css/style.css">
 
-        <!-- Google web font 
+        <!-- Google web font
    ================================================== -->
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 
@@ -764,7 +765,7 @@ if ($_POST) {
         </footer>
 
 
-        <!-- Javascript 
+        <!-- Javascript
 ================================================== -->
 
         <script type="text/javascript">
