@@ -124,7 +124,7 @@ if ($_POST) {
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#home" class="smoothScroll">INICIO</a></li>
                         <li><a href="#service" class="smoothScroll">SERVICIOS</a></li>
-                        <li><a href="#about" class="smoothScroll">NOSOTROS</a></li>
+                        <li><a href="#about">NOSOTROS</a></li>
                         <li><a href="#team" class="smoothScroll">EQUIPO</a></li>
                         <li><a href="#portfolio" class="smoothScroll">PORTAFOLIO</a></li>
                         <!-- <li><a href="#blog" class="smoothScroll">BLOG</a></li> -->
@@ -784,10 +784,36 @@ if ($_POST) {
         <script src="js/jquery.parallax.js"></script>
         <script src="js/nivo-lightbox.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
+        <script src="js/smooth-scroll.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+          var scroll = new SmoothScroll('a[href*="#"]', {
+          // Selectors
+          ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+          header: null, // Selector for fixed headers (must be a valid CSS selector)
 
+          // Speed & Easing
+          speed: 500, // Integer. How fast to complete the scroll in milliseconds
+          offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+          easing: 'easeInOutCubic', // Easing pattern to use
+          customEasing: function (time) {
+
+            // Function. Custom easing pattern
+            // If this is set to anything other than null, will override the easing option above
+
+            // return <your formulate with time as a multiplier>
+
+            // Example: easeInOut Quad
+            return time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time;
+
+          },
+
+          // Callback API
+          before: function (anchor, toggle) {}, // Callback to run before scroll
+          after: function (anchor, toggle) {} // Callback to run after scroll
+          });
+        </script>
 
     </body>
 
